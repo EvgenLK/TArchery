@@ -36,7 +36,7 @@ class TargetTableViewController: UITableViewController {
         guard segue.identifier == "saveSegue" else {return}
         let sourceVC = segue.source as! NewPointsTableViewController
         let point = sourceVC.point
-        numberSerial += 1
+        numberSerial += 2
         
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             objects[selectedIndexPath.row] = point
